@@ -14,4 +14,4 @@ Open Project folder "drf":
              ...your cataloge/drf>python manage.py runserver
 API's start on localhost , you can check it , enter this in your browser:
             http://localhost:8000/
-            Congratulations!
+            Congratulations!!!
