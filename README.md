@@ -15,3 +15,5 @@ Open Project folder "drf":
 API's start on localhost , you can check it , enter this in your browser:
             http://localhost:8000/
             Congratulations!!!
+            
+API's documentation: https://test17643.docs.apiary.io/#reference
