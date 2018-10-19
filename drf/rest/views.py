@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User,Group
 from .models import *
-from rest_framework import viewsets
-from rest.serializers import EzoneSerializer,ContactsSerializer,BranchesSerializer
+from rest_framework import viewsets,generics
+from rest.serializers import *
 
 class EzoneViewSet(viewsets.ModelViewSet):
     queryset=Ezone.objects.all()

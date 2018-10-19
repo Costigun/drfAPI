@@ -1,28 +1,6 @@
 from django.db import models
 from django.utils import timezone
 
-class Tea(models.Model):
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    king = models.CharField(
-        max_length=25,
-        default=None,
-    )
-    dateborn = models.DateTimeField(
-        default=timezone.now
-    )
-    text = models.TextField(
-        max_length=250,
-        blank=True
-    )
-    print(123)
-def born(self):
-    self.dateborn = timezone.now()
-    self.save()
-    
-
-def __str__(self):
-    return self.king
-
 class Ezone(models.Model):
     name = models.CharField(default=None,
         max_length=15)
@@ -56,6 +34,8 @@ class Contacts(models.Model):
         related_name='contacts'
 
     )
+    def __str__(self):
+        return self.type
 
 class Branches(models.Model):
     address = models.CharField(
@@ -71,3 +51,6 @@ class Branches(models.Model):
         on_delete=models.CASCADE,
         related_name='branches'
     )
+    def __str__(self):
+        return self.address
+  
