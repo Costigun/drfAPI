@@ -20,12 +20,4 @@ class EzoneTestCase(TestCase):
         self.assertEqual(max_length,15)
 
 
-    def test_create_notes(self):
-        number = 5
-        for new_notes in range (number):
-            Course.objects.create(name="test" % new_notes,
-                                 description="lorem ipsum dolore" % new_notes,
-                                 category="categoryyyyyyyyyy" % new_notes
-                                 )
-
 
